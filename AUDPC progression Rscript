@@ -6,10 +6,7 @@ library(ggplot2)
 library(agricolae)
 
 # --- 2. DATA: Simulated Wheat Leaf Rust Data ---
-data_rust <- data.frame(
-  time = c(0, 7, 14, 21, 28, 35, 42, 49, 56, 63, 70),
-  severity = c(0.0, 0.5, 1.2, 3.5, 8.0, 17.5, 35.0, 55.0, 72.0, 85.0, 90.0)
-)
+data_rust <- data wheat
 
 # Convert severity (%) to proportion for logistic fitting
 epsilon <- 1e-3  # avoid exact 0/1 for logistic model
